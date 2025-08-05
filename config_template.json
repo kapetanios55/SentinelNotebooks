@@ -1,0 +1,24 @@
+{
+  "workspace_config": {
+    "primary_workspace": "test-workspace",
+    "entra_workspace": "test-entra-workspace",
+    "auto_discover": true
+  },
+  "analysis_settings": {
+    "default_time_range_hours": 24,
+    "risk_score_thresholds": {
+      "high": 70,
+      "medium": 40,
+      "low": 20
+    },
+    "brute_force_detection": {
+      "min_failures": 10,
+      "failure_rate_threshold": 0.8
+    }
+  },
+  "visualization_settings": {
+    "max_display_rows": 20,
+    "chart_style": "seaborn",
+    "save_charts": false
+  }
+}
