@@ -20,3 +20,6 @@ __pycache__/
 # Local development files
 *.local.*
 test_*
+
+# Job configuration files
+*.job.yaml
