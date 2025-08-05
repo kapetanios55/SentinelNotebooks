@@ -1,4 +1,5 @@
-# Microsoft Sentinel Data La- **Device**: Monitors suspicious processes, credential dumping, lateral movement
+# Microsoft Sentinel data lake
+- **Device**: Monitors suspicious processes, credential dumping, lateral movement
 - **Threat Hunting**: Advanced C2 detection, living off the land, data exfiltration, UBA
 - **Security Events**: Windows authentication, process creation, account management
 
