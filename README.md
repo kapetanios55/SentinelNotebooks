@@ -1,4 +1,5 @@
 # Microsoft Sentinel data lake
+- **Service Principal Sign-Ins**: Zero-config risk & anomaly analytics (bursts, rare apps, off-hours, persistence, risky principal enrichment)
 - **Device**: Monitors suspicious processes, credential dumping, lateral movement
 - **Threat Hunting**: Advanced C2 detection, living off the land, data exfiltration, UBA
 - **Security Events**: Windows authentication, process creation, account management
@@ -6,7 +7,8 @@
 ## 🎯 **Publication-Ready Features**
 
 ✅ **No Setup Dependencies** - Each notebook works independently  
-✅ **Simple Configuration** - Just update one workspace name per notebook  
+✅ **Zero-Config (Service Principals)** - Auto-detects tables & infers schema; no workspace variable needed  
+✅ **Simple Configuration** - Just update one workspace name per notebook (others optional)  
 ✅ **Universal Compatibility** - Works in any Microsoft Sentinel environment  
 ✅ **Smart Error Handling** - Clear messages when data isn't available  
 ✅ **Adapts to Your Data** - Uses whatever tables you have access to  
@@ -29,7 +31,7 @@ ENTRA_WORKSPACE = "default"               # Usually keep as "default"
 - **"Table not found"**: Check workspace name and verify Data Lake onboarding
 - **Import errors**: Restart kernel, verify Sentinel extension authentication  
 - **Performance issues**: Use smaller time windows or larger runtime pool
-- **Limited data**: Notebooks adapt automatically - use whatever data you havealysis Notebooks
+- **Limited data**: Notebooks adapt automatically - use whatever data you have
 
 Security analysis notebooks for Microsoft Sentinel Data Lake using PySpark and advanced threat hunting techniques.
 
@@ -53,6 +55,7 @@ Each notebook is **completely self-contained** - no setup dependencies!
    - `03_Device_Security_Analysis.ipynb` - Endpoint security & threat detection
    - `04_Advanced_Threat_Hunting.ipynb` - Advanced C2, LotL, data exfiltration
    - `05_Security_Events_Analysis.ipynb` - Windows security events analysis
+   - `06_ServicePrincipal_SignIn_Analysis.ipynb` - Service principal sign-in anomalies, pivot patterns, enrichment & scoring
 
 ## What Each Notebook Does
 
@@ -60,12 +63,13 @@ Each notebook is **completely self-contained** - no setup dependencies!
 - **Device**: Monitors suspicious processes, credential dumping, lateral movement
 - **Threat Hunting**: Advanced C2 detection, living off the land, data exfiltration
 - **Security Events**: Windows authentication, process creation, account management
+- **Service Principals**: Bursts (μ+3σ), rare app usage, failure→success pivots, new/off-hours IPs, persistence patterns, risky principal enrichment & scoring
 
 ## Configuration
 
-Update workspace name in each notebook:
+Update workspace name in each notebook (except the service principal notebook which auto-detects):
 ```python
-PRIMARY_WORKSPACE = "your-workspace-name"  # � UPDATE THIS
+PRIMARY_WORKSPACE = "your-workspace-name"  # 👈 UPDATE THIS
 ```
 
 ## Troubleshooting
