@@ -4,6 +4,7 @@
 - **Device**: Monitors suspicious processes, credential dumping, lateral movement
 - **Threat Hunting**: Advanced C2 detection, living off the land, data exfiltration, UBA
 - **Security Events**: Windows authentication, process creation, account management
+- **Notebook Scenario Walkthroughs**: Guided investigations for Entra groups, unusual sign-ins, brute-force, lateral movement, and credential dumping patterns
 
 ## 🎯 **Publication-Ready Features**
 
@@ -58,6 +59,7 @@ Each notebook is **completely self-contained** - no setup dependencies!
    - `04_Advanced_Threat_Hunting.ipynb` - Advanced C2, LotL, data exfiltration
    - `05_Security_Events_Analysis.ipynb` - Windows security events analysis
    - `06_ServicePrincipal_SignIn_Analysis.ipynb` - Service principal sign-in anomalies, pivot patterns, enrichment & scoring
+   - `07_Notebook_Examples_Scenarios.ipynb` - Guided Sentinel scenario walkthroughs (Entra groups, unusual sign-ins, brute-force, lateral movement)
 
 ## What Each Notebook Does
 
@@ -67,6 +69,7 @@ Each notebook is **completely self-contained** - no setup dependencies!
 - **Threat Hunting**: Advanced C2 detection, living off the land, data exfiltration
 - **Security Events**: Windows authentication, process creation, account management
 - **Service Principals**: Bursts (μ+3σ), rare app usage, failure→success pivots, new/off-hours IPs, persistence patterns, risky principal enrichment & scoring
+- **Notebook Examples Scenarios**: Step-by-step Microsoft Sentinel walkthroughs for Entra groups, targeted sign-ins, unusual geos, brute-force, lateral movement, and credential dumping
 
 ## Configuration
 
