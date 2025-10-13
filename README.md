@@ -1,4 +1,5 @@
 # Microsoft Sentinel data lake
+- **Data Exfiltration Early Warning**: Detects staging, CLI uploads, egress spikes, and storage audit anomalies (with customizable allow-lists)
 - **Service Principal Sign-Ins**: Zero-config risk & anomaly analytics (bursts, rare apps, off-hours, persistence, risky principal enrichment)
 - **Device**: Monitors suspicious processes, credential dumping, lateral movement
 - **Threat Hunting**: Advanced C2 detection, living off the land, data exfiltration, UBA
@@ -51,6 +52,7 @@ Each notebook is **completely self-contained** - no setup dependencies!
    - Run the notebook - everything else is automatic!
 
 3. **Run Any Notebook (no specific order required):**
+   - `01_Data_Exfiltration_Early_Warning.ipynb` - Compression staging, suspicious uploads, egress spikes, storage audit anomalies
    - `02_Identity_Security_Analysis.ipynb` - Authentication threats & user behavior
    - `03_Device_Security_Analysis.ipynb` - Endpoint security & threat detection
    - `04_Advanced_Threat_Hunting.ipynb` - Advanced C2, LotL, data exfiltration
@@ -59,6 +61,7 @@ Each notebook is **completely self-contained** - no setup dependencies!
 
 ## What Each Notebook Does
 
+- **Data Exfiltration Early Warning**: Correlates compression jobs, staging directories, network egress, and storage operations. Includes allow-list scaffolding so you can tune out expected backup activity while keeping visibility into new behaviours.
 - **Identity**: Analyzes failed sign-ins, brute force attacks, geographic anomalies, user behavior
 - **Device**: Monitors suspicious processes, credential dumping, lateral movement
 - **Threat Hunting**: Advanced C2 detection, living off the land, data exfiltration
