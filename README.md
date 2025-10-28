@@ -60,6 +60,7 @@ Each notebook is **completely self-contained** - no setup dependencies!
    - `05_Security_Events_Analysis.ipynb` - Windows security events analysis
    - `06_ServicePrincipal_SignIn_Analysis.ipynb` - Service principal sign-in anomalies, pivot patterns, enrichment & scoring
    - `07_Notebook_Examples_Scenarios.ipynb` - Guided Sentinel scenario walkthroughs (Entra groups, unusual sign-ins, brute-force, lateral movement)
+   - `08_Anomalous_SignIn_Detection.ipynb` - Failed-then-success patterns, impossible travel detection, threat intelligence enrichment
 
 ## What Each Notebook Does
 
@@ -70,6 +71,7 @@ Each notebook is **completely self-contained** - no setup dependencies!
 - **Security Events**: Windows authentication, process creation, account management
 - **Service Principals**: Bursts (μ+3σ), rare app usage, failure→success pivots, new/off-hours IPs, persistence patterns, risky principal enrichment & scoring
 - **Notebook Examples Scenarios**: Step-by-step Microsoft Sentinel walkthroughs for Entra groups, targeted sign-ins, unusual geos, brute-force, lateral movement, and credential dumping
+- **Anomalous Sign-In Detection**: Detects failed-then-success authentication patterns, impossible travel scenarios, enriches with threat intelligence, calculates risk scores, saves to custom Log Analytics table
 
 ## Configuration
 
